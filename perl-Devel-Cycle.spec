@@ -6,7 +6,7 @@
 %define	pdir	Devel
 %define	pnam	Cycle
 Summary:	Devel::Cycle - Find memory cycles in objects
-Summary(pl.UTF-8):   Devel::Cycle - znajdowanie cykli pamięci w obiektach
+Summary(pl.UTF-8):	Devel::Cycle - znajdowanie cykli pamięci w obiektach
 Name:		perl-Devel-Cycle
 Version:	1.07
 Release:	1
