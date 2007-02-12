@@ -6,7 +6,7 @@
 %define	pdir	Devel
 %define	pnam	Cycle
 Summary:	Devel::Cycle - Find memory cycles in objects
-Summary(pl):	Devel::Cycle - znajdowanie cykli pamiêci w obiektach
+Summary(pl.UTF-8):   Devel::Cycle - znajdowanie cykli pamiÄ™ci w obiektach
 Name:		perl-Devel-Cycle
 Version:	1.07
 Release:	1
@@ -27,11 +27,11 @@ objects and other types of references. Because of Perl's
 reference-count based memory management, circular references will
 cause memory leaks.
 
-%description -l pl
-Ten pakiet zawiera proste narzêdzie dla programisty do znajdowania
-zapêtlonych odniesieñ w obiektach i innych rodzajach referencji. W
-wyniku perlowego zarz±dzania pamiêci± opartego o zliczanie odniesieñ
-zapêtlone odniesienia powoduj± wycieki pamiêci.
+%description -l pl.UTF-8
+Ten pakiet zawiera proste narzÄ™dzie dla programisty do znajdowania
+zapÄ™tlonych odniesieÅ„ w obiektach i innych rodzajach referencji. W
+wyniku perlowego zarzÄ…dzania pamiÄ™ciÄ… opartego o zliczanie odniesieÅ„
+zapÄ™tlone odniesienia powodujÄ… wycieki pamiÄ™ci.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
