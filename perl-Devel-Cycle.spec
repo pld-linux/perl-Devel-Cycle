@@ -17,6 +17,7 @@ Source0:	http://www.cpan.org/modules/by-authors/id/L/LD/LDS/Devel-Cycle-%{versio
 URL:		http://search.cpan.org/dist/Devel-Cycle/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+Suggests:	perl-PadWalker
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -26,11 +27,19 @@ objects and other types of references. Because of Perl's
 reference-count based memory management, circular references will
 cause memory leaks.
 
+Suggested packages:
+ - perl-PadWalker - If the PadWalker module is installed, Devel::Cycle
+   will also report cycles in code closures.
+
 %description -l pl.UTF-8
 Ten pakiet zawiera proste narzędzie dla programisty do znajdowania
 zapętlonych odniesień w obiektach i innych rodzajach referencji. W
 wyniku perlowego zarządzania pamięcią opartego o zliczanie odniesień
 zapętlone odniesienia powodują wycieki pamięci.
+
+Sugerowane pakiety:
+ - perl-PadWalker - Po zainstalowaniu modułu PadWalker, Devel::Cycle
+   będzie w stanie zgłaszać pętle w zagnieżdżonym kodzie.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
