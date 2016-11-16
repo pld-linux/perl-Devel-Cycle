@@ -8,12 +8,13 @@
 Summary:	Devel::Cycle - Find memory cycles in objects
 Summary(pl.UTF-8):	Devel::Cycle - znajdowanie cykli pamięci w obiektach
 Name:		perl-Devel-Cycle
-Version:	1.11
+Version:	1.12
 Release:	1
+# same as perl 5 >= 5.8.2
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/L/LD/LDS/Devel-Cycle-%{version}.tar.gz
-# Source0-md5:	67c42d79bcb7beb337023e3e00b0ebcb
+Source0:	http://www.cpan.org/modules/by-module/Devel/Devel-Cycle-%{version}.tar.gz
+# Source0-md5:	3d9a963da87b17398fab9acbef63f277
 URL:		http://search.cpan.org/dist/Devel-Cycle/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -63,5 +64,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorlib}/Devel/*.pm
-%{_mandir}/man3/*
+%{perl_vendorlib}/Devel/Cycle.pm
+%{_mandir}/man3/Devel::Cycle.3pm*
